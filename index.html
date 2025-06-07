@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Training Welcome Page</title>
+  <style>
+    body {
+      font-family: Cambria, sans-serif;
+      background-color: #f4f8fc;
+      margin: 0;
+      padding: 0;
+    }
+	.header-img {
+      width: 100%;
+      max-height: 150px;
+      object-fit: contain;
+      margin-bottom: 2px;
+  }
+
+    .training-section {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .training-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .training-header h2 {
+      font-size: 2rem;
+      color: #2c3e50;
+    }
+
+    .typing-text {
+      font-size: 1.1rem;
+      color: #34495e;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid #34495e;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      animation: blink-caret 0.75s step-end infinite;
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent; }
+      50% { border-color: #34495e; }
+    }
+
+    .training-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .training-box {
+      flex: 1 1 400px;
+      background: #fefefe;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .training-box:hover {
+      transform: translateY(-6px);
+    }
+
+    .training-box img {
+      width: 100%;
+	  max-width: 250px;
+	  max-height: 250px;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 10px;
+      margin: 0 auto 1rem;
+	  display: block;
+    }
+
+    .training-title {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .networking { color: #1e3799; }
+    .microcontroller { color: #1e3799; }
+
+    .training-box ul {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+      margin-bottom: 1rem;
+    }
+
+    .training-box ul li {
+      margin-bottom: 0.5rem;
+      color: #2d3436;
+    }
+
+    .training-box p {
+      color: #2980b9;
+      font-size: 0.95rem;
+      text-align: left;
+    }
+
+    .register-btn {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      background-color: #27ae60;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .typing-text {
+        font-size: 1rem;
+        white-space: normal;
+        border-right: none;
+        animation: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="training-section">
+    <div class="training-header">
+	 <img src="Logo1.jpg" alt="Header Image" class="header-img">
+      <h2>🚀 Upcoming Hands-on Training Sessions</h2>
+      <p id="typing-text" class="typing-text"></p>
+    </div>
+
+    <div class="training-grid">
+      <!-- Networking Training -->
+      <div class="training-box">
+        <img src="NET.jpg" alt="Networking Training Image" />
+        <h3 class="training-title networking">🌐 Networking Hands-on Training</h3>
+        <ul>
+          <li>✅ Learn IP addressing, cabling, routing & setup</li>
+          <li>✅ Hands-on configuration labs</li>
+          <li>✅ Troubleshooting real-life network issues</li>
+          <li>✅ Certificate + peer networking</li>
+        </ul>
+        <p>
+          📅 <strong>Date:</strong>  16th June, 2025 <br />
+          🕒 <strong>Time:</strong> Thur & Fri. 2pm-5pm - Sat. 10am-2pm <br />
+          📍 <strong>Venue:</strong> Computer Engineering Fed. Poly Mubi <br />
+          💰 <strong>Fee:</strong> ₦7,000 for one training <br>
+								<p>₦11,000 for both Networking & Microcontroller (₦3,000 discount)</p>
+								</p>
+       
+      </div>
+
+      <!-- Microcontroller Training -->
+      <div class="training-box">
+        <img src="MICR.jpg" alt="Microcontroller Project Image" />
+        <h3 class="training-title microcontroller">🔧 Microcontroller Project Training</h3>
+        <ul>
+          <li>✅ Build real-world projects using Arduino</li>
+          <li>✅ Learn automation, sensors & control</li>
+          <li>✅ Beginner-friendly with expert guidance</li>
+          <li>✅ Project showcase & certificate</li>
+        </ul>
+        <p>
+          📅 <strong>Date:</strong>  16th June, 2025 <br />
+          🕒 <strong>Time:</strong> Thur & Fri. 2pm-5pm - Sat. 10am-2pm <br />
+          📍 <strong>Venue:</strong> Computer Engineering Fed. Poly Mubi<br />
+          💰 <strong>Fee:</strong> ₦7,000 for one training <br>
+								<p>₦11,000 for both Networking & Microcontroller (₦3,000 discount)</p>
+								</p>
+       
+      </div>
+    </div>
+
+    <div style="text-align: center;">
+      <a href="[Insert Registration Link]" class="register-btn">Register Now</a>
+    </div>
+  </section>
+
+  <script>
+  const notes = [
+    "Welcome to Computer Engineering Students' Association (COMPESA)",
+    "Join our exciting double-impact tech trainings!",
+    "Boost your practical skills in Networking and Microcontroller Projects.",
+    "Certificates will be awarded at the end of the training!",
+    "Limited slots available — register now!",
+    "Great COMPESA 2025" // We'll add <strong> separately
+  ];
+
+  const typingTarget = document.getElementById("typing-text");
+  let noteIndex = 0;
+  let charIndex = 0;
+  let isBoldLastLine = false;
+
+  function type() {
+    const currentNote = notes[noteIndex];
+
+    // When on last line, prepare to bold it after typing
+    isBoldLastLine = (noteIndex === notes.length - 1);
+
+    if (charIndex < currentNote.length) {
+      typingTarget.innerHTML = isBoldLastLine
+        ? "<strong>" + currentNote.substring(0, charIndex + 1) + "</strong>"
+        : currentNote.substring(0, charIndex + 1);
+
+      charIndex++;
+      setTimeout(type, 40);
+    } else {
+      setTimeout(() => {
+        charIndex = 0;
+        noteIndex = (noteIndex + 1) % notes.length;
+        typingTarget.innerHTML = "";
+        type();
+      }, 2000); // Pause 2s before typing next note
+    }
+  }
+
+  window.onload = type;
+</script>
+
+
+
+</body>
+</html>
+
+
